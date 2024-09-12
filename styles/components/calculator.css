@@ -1,0 +1,143 @@
+body {
+  background-color: var(--clr-light);
+}
+
+.main-box {
+  height: 300px;
+  padding: 30px;
+  margin: 100px auto;
+  border: 2px solid #e0e0e0;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  gap: 2rem;
+}
+
+.screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#display {
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  color: var(--clr-dark);
+  background-color: rgba(224, 224, 224, 0.5);
+}
+
+.calc-box {
+  display: grid;
+  grid-template-columns: repeat(5, 40px);
+  grid-template-rows: repeat(4, 40px);
+  grid-template-areas:
+    'one two three add sub'
+    'four five six divide multiply'
+    'seven eight nine delete equal'
+    'zero zero  dot clear icon';
+  grid-gap: 10px;
+}
+#add {
+  grid-area: add;
+}
+#sub {
+  grid-area: sub;
+}
+#divide {
+  grid-area: divide;
+}
+#multiply {
+  grid-area: multiply;
+}
+
+#delete {
+  grid-area: delete;
+}
+#clear {
+  grid-area: clear;
+}
+#equal {
+  grid-area: equal;
+}
+#icon {
+  grid-area: icon;
+}
+
+#dot {
+  grid-area: dot;
+}
+#zero {
+  grid-area: zero;
+}
+#one {
+  grid-area: one;
+}
+#two {
+  grid-area: two;
+}
+#three {
+  grid-area: three;
+}
+#four {
+  grid-area: four;
+}
+#five {
+  grid-area: five;
+}
+#six {
+  grid-area: six;
+}
+#seven {
+  grid-area: seven;
+}
+#eight {
+  grid-area: eight;
+}
+#nine {
+  grid-area: nine;
+}
+
+.lni-calculator {
+  margin-top: 5px;
+  font-size: var(--size-3xl);
+}
+
+.num {
+  border-radius: 10px;
+  font-size: var(--size-xs);
+  background-color: var(--clr-darkGrey);
+  color: var(--clr-light);
+}
+.num:active {
+  transform: scale(0.95);
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 1);
+}
+.other {
+  border-radius: 10px;
+  font-size: var(--size-xs);
+  background-color: var(--clr-pink);
+  color: var(--clr-light);
+}
+.other:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 10px rgba(244, 63, 94, 1);
+}
+.operators {
+  border-radius: 10px;
+  font-size: var(--size-xs);
+  font-weight: bold;
+  background-color: var(--clr-softBlue);
+  color: var(--clr-light);
+}
+.operators:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 10px rgba(0, 123, 255, 1);
+}
+.lni-close {
+  font-size: 8px;
+}

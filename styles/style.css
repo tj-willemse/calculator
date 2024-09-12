@@ -1,0 +1,139 @@
+:root{
+    /* fonts */
+    --font-primary:"Merriweather", serif;
+    --font-secondary:"Playfair Display", serif;
+
+    /* colors */
+    --clr-dark:#030712;
+    --clr-slate50:#f8fafc ;
+    --clr-light:#ffffff;
+    --clr-slate300:#cbd5e1;
+    --clr-slate800:#1e293b;
+    --clr-muted:#6b7c94 ;
+    --clr-yellow800:#854d0e ;
+    --clr-blue800:#1e40af;
+
+
+    --clr-softBlue:#007BFF;
+    --clr-charcoal:#2E2E2E;
+    --clr-darkGrey:#333333;
+    --clr-lightGray:#E0E0E0;
+    --clr-pink: #f43f5e;
+    --clr-pink700:#be185d;
+  
+
+    /* Shadow */
+    --shadow-xl:0 19px 38px rgba(15, 23, 42, 0.3), 0, 15, 12, rgba(15, 23, 42, 0.22)
+   
+    /* sizes */
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.85rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+}
+
+.dark-mode{
+    --clr-light:#030712;
+    --clr-dark:#ffffff;
+
+    --clr-softBlue:#1e40af;
+    --clr-blue800:#007BFF;
+
+    --clr-pink700: #f43f5e;
+    --clr-pink:#be185d;
+
+    --clr-lightGrey:#333333;
+    --clr-darkGrey:#E0E0E0;
+}
+
+
+
+    
+*{
+    margin: 0;
+    padding: 0;
+    line-height: calc(1em + 0.5rem);
+}
+body{
+  font-family: var(--font-primary);
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+}
+
+img,
+picture,
+video,
+canvas,
+svg{
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select{
+    font: inherit;
+}
+
+button{
+    border: none;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: -0.025em;
+}
+
+p{
+    color: var(--clr-black);
+}
+a{
+    color: var(--clr-red);
+}
+strong{
+    color: var(--clr-light);
+    font-weight: 900;
+}
+
+
+/* scrollbar custom */
+button:focus-visible,
+a:focus-visible {
+    outline: solid var(--clr-light);
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--clr-slate50);
+    outline: 1px solid var(--clr-slate50);
+  }
+
+
+  
+  
